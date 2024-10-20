@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.inicio {
+    background-image: url(../img/inicio.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carrito {
+    display: none;
+    background-image: url(../img/carrito.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.finalizar {
+    display: none;
+    background-image: url(../img/pago.jfif);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color:deeppink;
+    font-size: 4.5rem;
+}
+
+#listaProductos .card {
+    height: 335px;
+}
+
+.inicio .btn, .carrito .btn, #btnVolverInicio {
+    background-color: rgb(163, 210, 228);
+    color: white;
+}
+
+.inicio .btn:hover {
+    background-color: white;
+    color: rgb(163, 210, 228);
+}
+
+#btnCerrarCarrito, .pagar {
+    background-color: deeppink;
+    color: white;
+}
+
+#btnCerrarCarrito:hover, .carrito .btn:hover, #btnVolverInicio:hover, .pagar:hover{
+    background-color:pink;
+    color: black;
+}
+
+footer {
+    background-color: rgb(163, 210, 228);
+}
+
+.finalizar img{
+    width: 80px;
+    height: 50px;
+}
+
+.finalizar img:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+
+
+
+
+

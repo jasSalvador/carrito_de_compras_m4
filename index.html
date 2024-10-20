@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/img/Tienda.jpg">
+    <!--nunito sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script defer src="./assets/js/script.js"></script>
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-2" href="#">Mi tiendita</a>
+            <div class="" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto d-flex mb-1 mb-lg-0">
+                <li class="nav-link" id="btnVerCarrito">
+                    <a class="nav-link fw-bold" href="#">Ver Carrito
+                        <i class="bi bi-cart4"></i>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a class="nav-link disabled" aria-current="page" href="#"><p class="fw-bold">Total: $<span id="totalCompra">0</span></p> </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="inicio pb-5 px-4" id="seccionInicio">
+        <div class="container pb-2">
+            <div class="cont-h1 pt-5 mt-3 mb-5 text-center mx-auto fw-bold">
+                <h1 class="pt-5 mt-5">Mi tiendita</h1>
+            </div>
+            <div class="row" id="listaProductos"></div>
+        </div>
+    </section>
+
+    <!--mostrar carrito-->
+    <section class="carrito py-5 px-4" id="seccionCarrito">
+        <div class="cont-h1 py-5 mt-5 text-center mx-auto fw-bold">
+            <h2 class="pt-2">Tu carrito</h2>
+        </div>
+        <div class="text-center mx-auto border border-1 border-light bg-white rounded-5 py-5 col-lg-6 col-md-8 col-sm-9 px-2">
+            <div id="mostrandoCarrito" class=""></div>
+            <button id="btnCerrarCarrito" class="btn mt-5">Cerrar Carrito</button>
+            <button id="btnFinalizarCompra" class="btn mt-5">Comprar ahora</button>
+        </div>
+    </section>
+
+    <!--finalizar y pagar compra-->
+    <section class="finalizar py-5 px-4" id="seccionFinalizar">
+        <div class="cont-h1 py-5 mt-5 text-center mx-auto fw-bold">
+            <h2 class="pt-2">Mi pedido</h2>
+        </div>
+        <div class="text-center mx-auto border border-1 border-light bg-white rounded-5 py-4 px-2 col-lg-6 col-md-8 col-sm-9">
+            <div class="px-3">
+                <!--mostrar total a pagar-->
+                <div id="pagoTotal" class="py-4 text-start fw-bold"></div>
+                <p class="text-start fs-5 pb-1">Selecciona el medio de pago:</p>
+                <div class="d-flex flex-wrap justify-content-between aling-items-center mx-auto mb-5">
+                    <div class="d-flex flex-wrap justify-content-start gap-2 mb-2">
+                        <img src="./assets/img/cardyellow.png" class="" alt="Tarjeta credito">
+                        <img src="./assets/img/cardgris.png" class="" alt="Tarjeta credito">
+                        <img src="./assets/img/cardpink.jfif" class="" alt="Tarjeta credito">
+                        <img src="./assets/img/cardazul.jpg" class="" alt="Tarjeta credito">
+                    </div>
+                    <div class="mb-2">
+                        <button id="btnPagar" class="btn pagar">Pagar</button>
+                    </div>
+                </div>
+                <button id="btnVolverInicio" class="btn mt-2">Volver a Inicio</button>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 text-center mx-auto">
+        <p class="text-center mx-auto text-secondary px-3 pt-3">Copyright &copy; 2024<span id="currentYear"></span> | Desarrollado por Jasmin S.</p>
+    </footer>
+</body>
+</html>
